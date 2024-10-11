@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  height: 100%;
+}
+
+
+.up-btn{
+  background-color: #DC3545;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  font-weight: 900 !important;
+  position: fixed;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+.up-btn{
+  background-color: #DC3545;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  font-weight: 900 !important;
+  position: fixed;
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 5px;
+  padding: 0.7rem;
+  font-weight: bold;
+  width: 3rem;
+  text-align: center;
+}
+
+.tag.green {
+  background-color: #1b5e20;
+}
+
+.tag.orange {
+  background-color: #f57f17;
+}
+
+.tag.red {
+  background-color: #7f0000;
+}
+
+.form-image {
+  min-width: 800px;
+  min-height: 600px;
+}
+
+/* Login Custom CSS */
+
+.custom-linear-gradient::before {
+  background: linear-gradient(0deg, transparent, #ff4b45);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.custom-linear-gradient::after {
+  background: linear-gradient(0deg, transparent, #ff4b45);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+.form {
+  padding: 50px 40px;
+}
+
+.inputbox-input {
+  z-index: 10;
+  padding: 20px 10px 10px;
+}
+
+.inputbox-span {
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: #ff4b45;
+  transform: translateY(-34px);
+  font-size: 0.75em;
+}
+
+.inputbox i {
+  z-index: 9;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+  height: 44px;
+}
+
+.links-a {
+  margin: 10px 0;
+}
+
+.links-a:hover,
+.links-a:nth-child(2) {
+  color: #ff4b45;
+}
+
+.custom-input {
+  padding: 11px 25px;
+}
+
+.custom-input:active {
+  opacity: 0.8;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
